@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#641b31" />
+  <meta name="description" content="Explore the VELORA fashion shopping app prototype." />
+  <title>VELORA — Interactive Fashion App Prototype</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="page-shell">
+    <header class="intro">
+      <p class="eyebrow">INTERACTIVE UI / UX PROTOTYPE</p>
+      <h1>VELORA</h1>
+      <p class="subtitle">Luxury fashion, curated for your story.</p>
+      <p class="hint">Explore the screens by tapping the buttons and navigation areas.</p>
+    </header>
+
+    <section class="prototype-area" aria-label="VELORA interactive prototype">
+      <div class="device" id="device">
+        <div class="screen" id="screen">
+          <img id="screen-image" src="assets/welcome.png" alt="VELORA welcome screen" draggable="false" />
+          <div id="hotspots" aria-label="Screen interactions"></div>
+        </div>
+      </div>
+      <div class="screen-info">
+        <div>
+          <p class="screen-kicker">CURRENT SCREEN</p>
+          <h2 id="screen-title">Welcome</h2>
+          <p id="screen-description">Start your VELORA shopping journey.</p>
+        </div>
+        <button class="reset-button" id="restart" type="button">Restart prototype</button>
+      </div>
+    </section>
+
+    <nav class="screen-picker" aria-label="Prototype screens">
+      <button type="button" data-screen="welcome" class="active">Welcome</button>
+      <button type="button" data-screen="signup">Sign up</button>
+      <button type="button" data-screen="login">Log in</button>
+      <button type="button" data-screen="home">Home</button>
+      <button type="button" data-screen="dress">Dress</button>
+      <button type="button" data-screen="coat">Coat suit</button>
+      <button type="button" data-screen="wishlist">Wishlist</button>
+      <button type="button" data-screen="bag">Shopping bag</button>
+      <button type="button" data-screen="profile">Profile</button>
+      <button type="button" data-screen="checkout">Checkout</button>
+      <button type="button" data-screen="success">Order placed</button>
+    </nav>
+
+    <footer>VELORA · Concept shopping experience · UI/UX portfolio project</footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
